@@ -1,0 +1,807 @@
+CRITICAL - 2025-05-28 04:08:22 --> Error: Class "App\Models\OperationModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:12:09 --> Error: Class "App\Models\OperationModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:12:48 --> Error: Class "App\Models\ServiceModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 04:13:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 04:13:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:16:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:21:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:24:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:27:20 --> Error: Undefined constant "WEB_DIR"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:31:46 --> Error: Undefined constant "WEB_DIR"
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:34:15 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 15.
+ 1 APPPATH\Views\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:34:49 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 15.
+ 1 APPPATH\Views\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:35:05 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 424.
+ 1 APPPATH\Views\index.php(424): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\index.php', 424)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(57): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:35:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "unnamed_(1).png"
+[Method: GET, Route: images/unnamed_%281%29.png]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('images/unnamed_(1).png')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('images/unnamed_(1).png')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:35:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "unnamed_(1).png"
+[Method: GET, Route: images/unnamed_%281%29.png]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('images/unnamed_(1).png')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('images/unnamed_(1).png')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 04:51:10 --> Error: Class "App\Models\Blog_model" not found
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Controllers\admin\Blogs.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Blogs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:11:48 --> ParseError: syntax error, unexpected token "return", expecting "function" or "const"
+[Method: POST, Route: admin/login]
+in APPPATH\Controllers\admin\Login.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp82\\htdocs\\ivagam\\app\\Controllers\\Admin\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:12:09 --> ParseError: syntax error, unexpected token "return", expecting "function" or "const"
+[Method: POST, Route: admin/login]
+in APPPATH\Controllers\admin\Login.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp82\\htdocs\\ivagam\\app\\Controllers\\Admin\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:12:18 --> ParseError: syntax error, unexpected token "return", expecting "function" or "const"
+[Method: POST, Route: admin/login]
+in APPPATH\Controllers\admin\Login.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp82\\htdocs\\ivagam\\app\\Controllers\\Admin\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:15:12 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 8.
+ 1 APPPATH\Views\admin\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:15:16 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 8.
+ 1 APPPATH\Views\admin\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:15:57 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 8.
+ 1 APPPATH\Views\admin\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\admin\Dashboard.php(26): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:17:00 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 8.
+ 1 APPPATH\Views\admin\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\admin\Dashboard.php(28): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:18:31 --> Error: Class "App\Models\Blog_model" not found
+[Method: GET, Route: admin/blogs]
+in APPPATH\Controllers\admin\Blogs.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Blogs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:18:48 --> Error: Class "App\Models\Blog_model" not found
+[Method: GET, Route: admin/blogs]
+in APPPATH\Controllers\admin\Blogs.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Blogs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:19:09 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BlogModel::get_all
+[Method: GET, Route: admin/blogs]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\admin\Blogs.php(28): CodeIgniter\Model->__call('get_all', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Blogs->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Blogs))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:19:24 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BlogModel::get_all
+[Method: GET, Route: admin/blogs]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\admin\Blogs.php(28): CodeIgniter\Model->__call('get_all', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Blogs->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Blogs))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:21:11 --> ErrorException: Declaration of App\Models\Blog_model::insert($data) must be compatible with CodeIgniter\Model::insert($row = null, bool $returnID = true)
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-28 05:21:24 --> ErrorException: Declaration of App\Models\BlogModel::insert($data) must be compatible with CodeIgniter\Model::insert($row = null, bool $returnID = true)
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-28 05:22:00 --> ErrorException: Declaration of App\Models\BlogModel::insert($data) must be compatible with CodeIgniter\Model::insert($row = null, bool $returnID = true)
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-28 05:22:14 --> ErrorException: Declaration of App\Models\BlogModel::insert($data) must be compatible with CodeIgniter\Model::insert($row = null, bool $returnID = true)
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-28 05:23:32 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: admin/blogs]
+in APPPATH\Views\admin\blogs\index.php on line 21.
+ 1 APPPATH\Views\admin\blogs\index.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\blogs\\index.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\admin\\blogs\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/blogs/index', [], true)
+ 5 APPPATH\Controllers\admin\Blogs.php(29): view('admin/blogs/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Blogs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Blogs))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:24:53 --> ErrorException: Declaration of App\Models\Blog_model::insert($data) must be compatible with CodeIgniter\Model::insert($row = null, bool $returnID = true)
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-28 05:25:01 --> ErrorException: Declaration of App\Models\BlogModel::insert($data) must be compatible with CodeIgniter\Model::insert($row = null, bool $returnID = true)
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-28 05:26:07 --> ArgumentCountError: Too few arguments to function App\Models\BlogModel::__construct(), 0 passed in D:\xampp82\htdocs\ivagam\app\Controllers\admin\Blogs.php on line 18 and exactly 1 expected
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 12.
+ 1 APPPATH\Controllers\admin\Blogs.php(18): App\Models\BlogModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Blogs->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-28 05:26:09 --> ArgumentCountError: Too few arguments to function App\Models\BlogModel::__construct(), 0 passed in D:\xampp82\htdocs\ivagam\app\Controllers\admin\Blogs.php on line 18 and exactly 1 expected
+[Method: GET, Route: admin/blogs]
+in APPPATH\Models\BlogModel.php on line 12.
+ 1 APPPATH\Controllers\admin\Blogs.php(18): App\Models\BlogModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Blogs->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:07:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.c...')
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.c...')
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:07:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: css/bootstrap.min.css.map]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.css.map')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:07:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundl...')
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundl...')
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:07:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: js/bootstrap.bundle.min.js.map]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundle.min.js.map')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:07:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.c...')
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.c...')
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:07:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: css/bootstrap.min.css.map]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.css.map')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:07:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundl...')
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundl...')
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:07:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: js/bootstrap.bundle.min.js.map]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundle.min.js.map')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:21:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.c...')
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.c...')
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:21:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: css/bootstrap.min.css.map]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('css', 'bootstrap.min.css.map')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:21:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundl...')
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundl...')
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:21:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: js/bootstrap.bundle.min.js.map]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('js', 'bootstrap.bundle.min.js.map')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:28:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:28:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-28 11:28:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'omerasof_ivagam_web'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'omerasof_ivagam...', Object(SensitiveParameterValue), 'omerasof_ivagam...', 3306, '', 0)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp82\htdocs\ivagam\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp82\htdocs\ivagam\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp82\htdocs\ivagam\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp82\htdocs\ivagam\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp82\htdocs\ivagam\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp82\htdocs\ivagam\app\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp82\htdocs\ivagam\app\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+#7 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp82\htdocs\ivagam\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp82\htdocs\ivagam\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp82\htdocs\ivagam\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp82\htdocs\ivagam\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-28 11:28:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\OperationModel.php(24): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(53): App\Models\OperationModel->get_all_blogs()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

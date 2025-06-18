@@ -1,0 +1,26 @@
+CRITICAL - 2025-05-29 05:31:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog.php"
+[Method: GET, Route: about-us]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('blog', [], true)
+ 3 APPPATH\Controllers\Home.php(33): view('blog')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('about-us')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-29 10:53:35 --> ErrorException: Undefined variable $testimonials
+[Method: GET, Route: about-us]
+in APPPATH\Views\about_us.php on line 309.
+ 1 APPPATH\Views\about_us.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testimonials', 'D:\\xampp82\\htdocs\\ivagam\\app\\Views\\about_us.php', 309)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagam\\app\\Views\\about_us.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about_us', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('about_us')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index('about-us')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
