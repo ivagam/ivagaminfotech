@@ -249,16 +249,7 @@
                                     <p>PHP Developer</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="team-box">
-                                    <div class="img-box">
-                                        <img src="<?php echo WEB_DIR?>images/teams/ivagam-infotech-navin.jpg" alt="" class="object-cover">
-                                    </div>
-                                    <h4><a href="#">Naveen M</a></h4>
-                                    <p>PHP Developer</p>
-                                </div>
-                            </div>
-                            
+                                                        
                             <div class="item">
                                 <div class="team-box">
                                     <div class="img-box">
@@ -268,15 +259,7 @@
                                     <p>.Net Developer</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="team-box">
-                                    <div class="img-box">
-                                        <img src="<?php echo WEB_DIR?>images/teams/ivagam-infotech-vijay.jpeg" alt="" class="object-cover">
-                                    </div>
-                                    <h4><a href="#">Vijay A</a></h4>
-                                    <p>Android Developer</p>
-                                </div>
-                            </div>
+                            
                             <div class="item">
                                 <div class="team-box">
                                     <div class="img-box">
