@@ -269,6 +269,16 @@
                                     <p>Java Full Stack Developer</p>
                                 </div>
                             </div>
+
+                            <div class="item">
+                                <div class="team-box">
+                                    <div class="img-box">
+                                        <img src="<?php echo WEB_DIR?>images/teams/ivagam-infotech-parameshvaran.jpeg" alt="" class="object-cover">
+                                    </div>
+                                    <h4><a href="#">Parameshvaran S</a></h4>
+                                    <p>.Net Developer</p>
+                                </div>
+                            </div>
                            
                         </div>
                     </div>
