@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivagam</title>
-   <link rel="icon" href="<?php echo WEB_DIR ?>images/favicon1.png" sizes="16x16" />
+<link rel="icon" href="<?php echo WEB_DIR ?>images/favicon1.png" sizes="16x16" />
 <link rel="stylesheet" href="<?php echo WEB_DIR ?>css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo WEB_DIR ?>css/font-awesome.css">
 <link rel="stylesheet" href="<?php echo WEB_DIR ?>css/owl.carousel.min.css">

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Patua One";
+  src: url("../fonts/PatuaOne-Regular.woff2") format("woff2"), url("../fonts/PatuaOne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noticia Text";
+  src: url("../fonts/NoticiaText-Regular.woff2") format("woff2"), url("../fonts/NoticiaText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

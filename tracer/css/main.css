@@ -1,0 +1,202 @@
+@import url('variable.css');
+@import url('global.css');
+@import url('grid.css');
+
+@import url('fonts.css');
+@import url('button.css');
+@import url('home.css');
+@import url('header.css');
+@import url('footer.css');
+
+
+
+/* @import url('slider.css'); */
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    overflow-x: hidden;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: "Noticia Text";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    background-color: var(--white);
+
+    @media(min-width:768px){
+        font-size: 1.0625rem;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    color:var(--primary);
+}
+
+body {
+
+  
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color:var(--dark);
+        text-transform: uppercase;
+       
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    h1,
+    .h1 {
+        font: var(--h1-text-style);
+    }
+
+    h2,
+    .h2 {
+        font: var(--h2-text-style);
+
+    }
+
+
+    h3 {
+        font: var(--h3-text-style);
+    }
+
+    .h4,
+    h4 {
+        font: var(--h4-text-style);
+    }
+
+    .h5,
+    h5 {
+        font: var(--h5-text-style);
+    }
+
+    p {
+        color: var(--para);
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+
+        strong {
+            font-weight: bold;
+        }
+
+        span {
+            color: var(--secondColor);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--primary);
+        }
+    }
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+
+h3,
+h4 {
+    margin-bottom: 0.75rem;
+}
+
+h2.h1 {
+    margin-bottom: 2rem;
+}
+
+.gutter88 {
+    &.container {
+        @media (min-width:1400px) {
+            max-width: 1352px;
+            padding-right: 2.75rem;
+            padding-left: 2.75rem;
+        }
+    }
+
+    .row>* {
+
+
+
+        @media (min-width:1400px) {
+            padding-right: 2.75rem;
+            padding-left: 2.75rem;
+        }
+
+    }
+
+    .row {
+        @media (min-width:1400px) {
+            margin-left: -2.75rem;
+            margin-right: -2.75rem;
+        }
+    }
+}
+
+.gutter16 {
+   
+
+    .row>* {
+            padding-right:0.5rem;
+            padding-left:0.5rem;
+
+    }
+
+    .row {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+    }
+}
+
+
+
+
+.desktop {
+    display: none;
+
+    @media (min-width:992px) {
+        display: block;
+    }
+}
+
+.mobile {
+    display: block;
+
+    @media (min-width:992px) {
+        display: none;
+    }
+}
+
+
+
+
+/* Using a string */

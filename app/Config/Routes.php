@@ -36,6 +36,12 @@ use CodeIgniter\Router\RouteCollection;
 });
 
 $routes->get('/', 'Home::index');
+
+$routes->get('web_development', 'Home::webDevelopment');
+$routes->get('desktop_development', 'Home::desktopDevelopment');
+$routes->get('mobile_app_development', 'Home::mobileAppDevelopment');
+$routes->get('gps_tracking_solution', 'Home::tracer');
+
 $routes->get('(:any)', 'Home::index/$1');
 
 $routes->group('operation', function ($routes) {
@@ -51,6 +57,8 @@ $routes->group('operation', function ($routes) {
     $routes->get('edit_testimonial/(:num)', 'Operation::edit_testimonial/$1');
     $routes->post('edit_testimonial/(:num)', 'Operation::edit_testimonial/$1');
     $routes->get('delete_testimonial/(:num)', 'Operation::delete_testimonial/$1');
+
+    
 });
 
 

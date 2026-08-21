@@ -34,7 +34,7 @@ class Home extends BaseController
                 'blogs' => $this->operationModel->get_all_blogs(),
                 'service' => $this->serviceModel->get_all(),
                 'testimonials' => $this->operationModel->get_all_testimonials(),
-            ];
+            ];            
             return view('about_us', $data);
         } 
         elseif ($page === 'contact-us') {
@@ -44,8 +44,11 @@ class Home extends BaseController
             $this->session->set('valuecaptchaCode', $captcha);
 
             return view('contact_us', ['captcha' => $captcha]);
-        } 
-        elseif ($page === 'send-email') {
+        } elseif ($page === 'tamil-input-plugins') {
+
+            return view('tamil_plugins');
+
+        } elseif ($page === 'send-email') {
             return $this->sendEmail();
         } 
         else {
@@ -53,7 +56,7 @@ class Home extends BaseController
                 'blogs' => $this->operationModel->get_all_blogs(),
                 'service' => $this->serviceModel->get_all(),
                 'testimonials' => $this->operationModel->get_all_testimonials(),
-            ];
+            ];            
             return view('index', $data);
         }
     }
@@ -154,5 +157,25 @@ class Home extends BaseController
         }
 
         $mail->clearAllRecipients();
+    }   
+
+    public function webDevelopment()
+    {
+        return view('web_development');
+    }
+
+    public function desktopDevelopment()
+    {
+        return view('desktop_development');
+    }
+
+    public function mobileAppDevelopment()
+    {
+        return view('mobile_app_development');
+    }
+
+    public function tracer()
+    {
+        return view('tracer');
     }
 }

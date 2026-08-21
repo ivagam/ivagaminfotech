@@ -48,6 +48,8 @@
                                                             <li class="d-block py-lg-2" data="1"><a href="#">Custom Software Development Services</a></li>
                                                             <li class="d-block py-lg-2" data="2"><a href="#">Custom Web App Development</a></li>
                                                             <li class="d-block py-lg-2" data="3"><a href="#">Mobile App Development</a></li>
+                                                            <li class="d-block py-lg-2" data="10"><a href="">GPS Tracking Solutions</a></li>
+                                                            <li class="d-block py-lg-2" data="11"><a href="">CCTV Monitoring Solutions</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-lg-9 ps-lg-5">
@@ -63,7 +65,7 @@
                                                                             <p>
                                                                             Top-notch expertise allows us to build software that stands out in the market.
                                                                             </p>
-                                                                            <a href="#">Web Development</a>
+                                                                            <a href="<?= base_url('web_development') ?>">Web Development</a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="item">
@@ -75,7 +77,7 @@
                                                                             <p>
                                                                             Get the full range of Windows & macOS development frameworks with us.
                                                                             </p>
-                                                                            <a href="#">Desktop Development</a>
+                                                                            <a href="<?= base_url('desktop_development') ?>">Desktop Development</a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="item">
@@ -87,7 +89,7 @@
                                                                             <p>
                                                                             Get your custom mobile app with our team of expert engineers. With us, you will upgrade your services and boost end users’ satisfaction with convenient solutions built for mobile.
                                                                             </p>
-                                                                            <a href="#">Mobile App Development</a>
+                                                                            <a href="<?= base_url('mobile_app_development') ?>">Mobile App Development</a>
                                                                         </div>
                                                                     </div>
                                                                   
@@ -215,6 +217,102 @@
                                                                             <a href="#">Hybrid Apps</a>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="10" class="submenu-container">
+                                                            <div class="submenu2">
+                                                                <div class="owl-carousel">
+
+                                                                   <div class="item">
+                                                                        <div class="menu-box">
+                                                                            <div class="img-box">
+                                                                                <img src="<?php echo WEB_DIR?>images/services/gps-tracker.png" alt="GPS Tracker Installation" class="object-cover">
+                                                                            </div>
+                                                                            <h5>Bike GPS Tracker Installation</h5>
+                                                                            <p>
+                                                                                Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
+                                                                            </p>
+                                                                            <a href="<?= base_url('gps_tracking_solution') ?>">Bike GPS Tracker Installation</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="menu-box">
+                                                                            <div class="img-box">
+                                                                                <img src="<?php echo WEB_DIR?>images/services/gps-tracker.png" alt="GPS Tracker Installation" class="object-cover">
+                                                                            </div>
+                                                                            <h5>Bike GPS Tracker Installation</h5>
+                                                                            <p>
+                                                                                Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
+                                                                            </p>
+                                                                            <a href="<?= base_url('gps_tracking_solution') ?>">Bike GPS Tracker Installation</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- GPS Tracker -->
+                                                                    <div class="item">
+                                                                        <div class="menu-box">
+                                                                            <div class="img-box">
+                                                                                <img src="<?php echo WEB_DIR?>images/services/gps-tracker.png" alt="GPS Tracker Installation" class="object-cover">
+                                                                            </div>
+                                                                            <h5>Bike GPS Tracker Installation</h5>
+                                                                            <p>
+                                                                                Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
+                                                                            </p>
+                                                                            <a href="<?= base_url('gps_tracking_solution') ?>">Bike GPS Tracker Installation</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="11" class="submenu-container">
+                                                            <div class="submenu2">
+                                                                <div class="owl-carousel">
+
+                                                                    <!-- CCTV Installation -->
+                                                                    <div class="item">
+                                                                        <div class="menu-box">
+                                                                            <div class="img-box">
+                                                                                <img src="<?php echo WEB_DIR?>images/services/cctv-installation.png" alt="CCTV Installation" class="object-cover">
+                                                                            </div>
+                                                                            <h5>CCTV Installation & Maintenance</h5>
+                                                                            <p>
+                                                                                We provide professional CCTV camera installation, configuration, and maintenance services for homes, offices, shops, schools, and industries. Ensure 24/7 security with reliable surveillance solutions.
+                                                                            </p>
+                                                                            <a href="#">CCTV Installation & Maintenance</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- GPS Tracker -->
+                                                                    <div class="item">
+                                                                        <div class="menu-box">
+                                                                            <div class="img-box">
+                                                                                <img src="<?php echo WEB_DIR?>images/services/gps-tracker.png" alt="GPS Tracker Installation" class="object-cover">
+                                                                            </div>
+                                                                            <h5>Bike GPS Tracker Installation</h5>
+                                                                            <p>
+                                                                                Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
+                                                                            </p>
+                                                                            <a href="#">Bike GPS Tracker Installation</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Video Door Phone -->
+                                                                    <div class="item">
+                                                                        <div class="menu-box">
+                                                                            <div class="img-box">
+                                                                                <img src="<?php echo WEB_DIR?>images/services/video-door-phone.png" alt="Video Door Phone" class="object-cover">
+                                                                            </div>
+                                                                            <h5>Video Door Phone Installation</h5>
+                                                                            <p>
+                                                                                Improve your home and office security with modern video door phone systems. We provide installation, setup, and maintenance for smart visitor monitoring and secure access control.
+                                                                            </p>
+                                                                            <a href="#">Video Door Phone Installation</a>
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -540,6 +638,9 @@ We provide outsourcing services for experienced ERPNext developers to support yo
                             </li>
                             <li>
                             <a href="<?php echo WEB_DIR ?>contact-us">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo WEB_DIR ?>tamil-input-plugins">Tamil Input Plugins</a>
                             </li>
                         </ul>
                     </div>

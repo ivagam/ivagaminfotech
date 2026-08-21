@@ -23,7 +23,7 @@ class App extends BaseConfig
         parent::__construct();
 
         if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost:8080') {
-            $this->baseURL = 'http://localhost:8080/ivagam/';
+            $this->baseURL = 'http://localhost:8080/ivagaminfotech/';
         } else {
             $this->baseURL = 'https://ivagaminfotech.com/';
         }

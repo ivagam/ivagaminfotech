@@ -1,0 +1,25 @@
+.header{
+    background-color:#222a37;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .logo{
+        width: 240px;
+        
+    }
+}
+.header-bottom{
+    background-color:#42a6e5;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    h4{
+        color:var(--light);
+
+    }
+}
+.breadcrumb{
+    span{
+        font-size: 14px;
+        color:var(--light);  
+
+    }
+}

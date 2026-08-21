@@ -1,0 +1,14 @@
+CRITICAL - 2026-07-27 04:14:56 --> ErrorException: Undefined variable $captcha
+[Method: GET, Route: tracer]
+in APPPATH\Views\tracer.php on line 80.
+ 1 APPPATH\Views\tracer.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $captcha', 'D:\\xampp82\\htdocs\\ivagaminfotech\\app\\Views\\tracer.php', 80)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp82\\htdocs\\ivagaminfotech\\app\\Views\\tracer.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tracer', [], true)
+ 5 APPPATH\Controllers\Home.php(179): view('tracer')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tracer()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

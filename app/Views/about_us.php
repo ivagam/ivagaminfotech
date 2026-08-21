@@ -43,10 +43,7 @@
                         <p>
                         Ivagam Infotech Private Limited has been a prominent player in the software development industry for the past eight years, driven by the leadership of directors P. Murugan and R. Pasupathi. Based in the vibrant town of Tiruvannamalai, Tamil Nadu, the company has established itself as a trusted partner for businesses seeking innovative and reliable technology solutions.
                         </p>
-                        <p>
-                        Company Overview Founded with a vision to provide comprehensive software services, Ivagam Infotech has grown steadily, employing a talented team of 10 professionals who bring diverse technical expertise to the table. Over the years, the company has delivered successful projects in web, mobile, and desktop application development, earning a reputation for quality and customer satisfaction.
-  
-</p>
+                        <p>Company Overview Founded with a vision to provide comprehensive software services, Ivagam Infotech has grown steadily, employing a talented team of 10 professionals who bring diverse technical expertise to the table. Over the years, the company has delivered successful projects in web, mobile, and desktop application development, earning a reputation for quality and customer satisfaction.</p>
                         <a href="#" class="btn_ primaary">Read more</a>
                     </div>
                     <div class="col-lg-6 mb-lg-0 mb-4 order-lg-2 order-1">
@@ -207,7 +204,7 @@
                             <div class="item">
                                 <div class="team-box">
                                     <div class="img-box">
-                                    <img src="<?php echo WEB_DIR ?>images/teams/ivagam-infotech-saravanan.jpg" alt="" class="object-cover">
+                                    <img src="<?php echo WEB_DIR ?>images/teams/ivagam-infotech-saravanan.jpeg" alt="" class="object-cover">
                                     </div>
                                     <h4><a href="#">Saravanan M</a></h4>
                                     <p>Full Stack Developer</p>
@@ -249,16 +246,6 @@
                                     <p>PHP Developer</p>
                                 </div>
                             </div>
-                                                        
-                            <div class="item">
-                                <div class="team-box">
-                                    <div class="img-box">
-                                        <img src="<?php echo WEB_DIR?>images/teams/ivagam-infotech-prasanth.jpeg" alt="" class="object-cover">
-                                    </div>
-                                    <h4><a href="#">Prasanth G</a></h4>
-                                    <p>.Net Developer</p>
-                                </div>
-                            </div>
                             
                             <div class="item">
                                 <div class="team-box">
@@ -277,6 +264,26 @@
                                     </div>
                                     <h4><a href="#">Parameshvaran S</a></h4>
                                     <p>.Net Developer</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="team-box">
+                                    <div class="img-box">
+                                        <img src="<?php echo WEB_DIR?>images/teams/ivagam-infotech-nishanth.jpeg" alt="" class="object-cover">
+                                    </div>
+                                    <h4><a href="#">Nishanth D</a></h4>
+                                    <p>PHP Developer</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="team-box">
+                                    <div class="img-box">
+                                        <img src="<?php echo WEB_DIR?>images/teams/ivagam-infotech-renu.jpeg" alt="" class="object-cover">
+                                    </div>
+                                    <h4><a href="#">Renu P</a></h4>
+                                    <p>PHP Developer</p>
                                 </div>
                             </div>
                            

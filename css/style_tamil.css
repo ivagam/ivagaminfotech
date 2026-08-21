@@ -1,0 +1,89 @@
+
+p{
+    font-size:20px;
+}
+
+.container{
+    gap:30px;
+}
+
+.popup{
+    position:absolute;
+    left:calc(100% + 15px);
+    top:50px;
+    width:250px;
+    background:#fff;
+    border:1px solid #bbb;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    display:none;
+    max-height:250px;
+    overflow-y:auto;
+    z-index:9999;
+}
+
+.popup .item{
+    padding:12px 15px;
+    cursor:pointer;
+    font-size:24px;
+}
+
+.popup .item:hover,
+.popup .active{
+
+    background:#1565c0;
+    color:#fff;
+}
+
+element.style {
+    left: 80px !important;    
+}
+
+.download-section{
+    text-align:center;
+    margin:20px 0;
+}
+
+.english-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.input-label {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+#englishBox {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 22px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#englishBox:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.banner-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner-image img {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

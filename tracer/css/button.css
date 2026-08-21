@@ -1,0 +1,216 @@
+.btn {
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    transition: ease-in-out all 0.4s;
+    transform: scale(1);
+    align-items: center;
+    position: relative;
+    column-gap: 0.25rem;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 0.5rem 1.5rem;
+    border-radius:6px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    text-align: center;
+
+    &:before{
+        content:"";
+        height: 100%;
+        transform: scaleX(0);
+        position: absolute;
+        background-color:#42a6e5;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+
+    span {
+        display: flex;
+        align-items: center;
+
+        svg {
+            transition: ease-in-out all 0.4s;
+
+            path {
+                transition: ease-in-out all 0.4s;
+            }
+
+            width: 12px;
+
+            @media(min-width:768px) {
+                width: 17px;
+            }
+        }
+    }
+    &.primary{
+        background: var(--primary);
+        color:var(--light);
+    }
+
+    &.secondary{
+        background: var(--secondary);
+        color:var(--light);
+    }
+
+    &.white{
+        background: var(--light);
+        color:var(--primary);
+        &:hover{
+            color:var(--light);
+        }
+    }
+
+
+
+    &:hover {
+        &:before{
+            transform: scaleX(1);
+        }
+        span {
+            svg {
+                /* transform: rotate(38deg); */
+            }
+        }
+
+
+    }
+}
+
+.book-btn{
+    a{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        color:var(--white);
+        transition: ease-in-out all 0.4s;
+
+        i{
+            width: 54px;
+            height: 54px;
+            flex:0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1000px;
+            border: 1px solid var(--overlayLight);
+            background: var(--primary);
+            box-shadow: 0 14px 10px -10px var(--box-shadow);
+        }
+        &:hover{
+            transform: scale(0.98);
+        }
+    }
+    small{
+        font-size: 12px;
+        color:var(--light);
+    }
+    h3{
+       color:var(--light); 
+    }
+}
+
+
+
+
+
+
+.submit-btn {
+    height:56px;
+    transition: ease-in-out all 0.4s;
+    transform: scale(1);
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 100px;
+    cursor: pointer;
+    
+
+    p{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 44px;
+        border: 0;
+        color: var(--light);
+        font-size: 0.875rem;
+        text-align: left;
+        line-height: 0.5;
+        padding-left: 22px;
+        padding-right: 72px;
+        text-align: center;
+        font-family: 'Anton';
+        text-transform: uppercase;
+        cursor: pointer;
+
+        @media(min-width:768px) {
+            font-size: 1.0625rem;
+            
+        }
+
+
+    }
+
+    &:after {
+        content: "";
+        width: 22px;
+        height: 22px;
+        background-image: url(../media/images/submit-btn-arr.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        background-size: 14px;
+        transition: ease-in-out all 0.4s;
+        position: absolute;
+        right: 24px;
+
+
+
+        @media(min-width:768px) {
+            background-size: 22px;
+        }
+    }
+
+
+
+    &:hover {
+        background-color: var(--primary);
+        transform: scale(0.98);
+
+        input {
+            color: var(--white);
+        }
+
+        &:after {
+            /* transform: translateY(-50%) rotate(36deg); */
+            /* filter: invert(1) contrast(1000000) */
+        }
+
+    }
+}
+
+.wpcf7-spinner {
+    position: absolute;
+}

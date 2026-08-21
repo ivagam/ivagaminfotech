@@ -82,8 +82,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-1 order-2 pe-lg-5">
-                        <div class="title mb-lg-5 mb-4">
-                            
+                        <div class="title mb-lg-5 mb-4">                            
                             <h2 class="">About Ivagam Infotech Private Limited</h2>
                         </div>
                         <p>

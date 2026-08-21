@@ -1,0 +1,38 @@
+:root {
+
+    --primary: #6d7216;
+    --secondary: #ff3a3a;
+    --light: #faf9f6;
+    --dark: #222a37;
+    --para:#4B4B4B;
+
+    --backgroundPrimary:#f8f8f8;
+    --backgroundSecondary:#2e2e2e;
+    --backgroundTertiary:#313131;
+
+    --overlayLight:rgba(255, 255, 255, 0.25);
+    --overlayDark:rgba(0, 0, 0, 0.10);
+    --white:#ffffff;
+
+    /* Effect Style */
+    --shadow: 0 14px 10px -10px rgba(0, 0, 0, 0.18);
+    
+    /* Fonts size */
+    --h1-text-style: clamp(2rem, calc(5vw + 1rem), 4rem)/120% 'Patua One';
+    --h2-text-style: clamp(2rem, calc(3vw + 0.5rem), 3rem)/120% 'Patua One';
+    --h3-text-style: clamp(1.5rem, calc(3vw + 0.25rem), 2rem)/120% 'Patua One';
+    --h4-text-style: clamp(1.25rem, calc(2.5vw + 0.25rem), 1.5rem)/120% 'Patua One';
+    --h5-text-style: clamp(0.75rem, calc(1.5vw + 0.25rem), 1.125rem)/120% 'Patua One';
+
+
+
+    /* image ratio */
+    --aspect-ratio1-1: 1/1;
+    --aspect-ratio2-3: 2/3;
+    --aspect-ratio16-9: 16/9;
+    --aspect-ratio9-16: 9/16;
+    --aspect-ratio4-3: 4/3;
+    --aspect-ratio3-4: 3/4;
+}
+
+
