@@ -15,9 +15,9 @@
                     <div class="col-auto ms-auto">
                         <div class="d-lg-block d-none">
                             <ul class="header-contact_box p-0 m-0 list-unstyled">
-                            <li><a href="tel:6783453456" target="_blank"><span class="icon fa-solid fa-phone fa-fw"></span>04175-253218</a></li>
-<li><a href="mailto:info@ivagaminfotech.com" target="_blank"><span class="icon fa-solid fa-envelope fa-fw"></span>info@ivagaminfotech.com</a></li>
-</ul>
+                                <li><a href="tel:6783453456" target="_blank"><span class="icon fa-solid fa-phone fa-fw"></span>04175-253218</a></li>
+                                <li><a href="mailto:info@ivagaminfotech.com" target="_blank"><span class="icon fa-solid fa-envelope fa-fw"></span>info@ivagaminfotech.com</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -27,10 +27,10 @@
             <div class="row align-items-center">
                 <div class="col d-flex align-items-center">
                 <div class="logo me-lg-4 py-lg-2">
-    <a href="<?php echo WEB_DIR ?>">
-        <img src="<?php echo WEB_DIR ?>images/logo.png" alt="" class="img-fluid">
-    </a>
-</div>
+                    <a href="<?php echo WEB_DIR ?>">
+                        <img src="<?php echo WEB_DIR ?>images/logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
                     <div class="nav-wrap">
                         <ul id="menu">
                             <li>
@@ -92,7 +92,7 @@
                                                                             <a href="<?= base_url('mobile_app_development') ?>">Mobile App Development</a>
                                                                         </div>
                                                                     </div>
-                                                                  
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -166,7 +166,7 @@
                                                                             <a href="#">API Development and Integration</a>
                                                                         </div>
                                                                     </div>
-                                                                    
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -233,7 +233,7 @@
                                                                             <p>
                                                                                 Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
                                                                             </p>
-                                                                            <a href="<?= base_url('gps_tracking_solution') ?>">Bike GPS Tracker Installation</a>
+                                                                            <a href="<?= base_url('gpsTrakingSolution') ?>">Bike GPS Tracker Installation</a>
                                                                         </div>
                                                                     </div>
 
@@ -246,7 +246,7 @@
                                                                             <p>
                                                                                 Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
                                                                             </p>
-                                                                            <a href="<?= base_url('gps_tracking_solution') ?>">Bike GPS Tracker Installation</a>
+                                                                            <a href="<?= base_url('gpsTrakingSolution') ?>">Bike GPS Tracker Installation</a>
                                                                         </div>
                                                                     </div>
 
@@ -260,7 +260,7 @@
                                                                             <p>
                                                                                 Protect your motorcycle with advanced GPS tracking devices. We install high-quality GPS trackers that provide real-time location tracking, theft alerts, route history, and mobile app monitoring.
                                                                             </p>
-                                                                            <a href="<?= base_url('gps_tracking_solution') ?>">Bike GPS Tracker Installation</a>
+                                                                            <a href="<?= base_url('gpsTrakingSolution') ?>">Bike GPS Tracker Installation</a>
                                                                         </div>
                                                                     </div>
 
@@ -363,8 +363,8 @@
                                                                             <a href="#">Ticketing Tool</a>
                                                                         </div>
                                                                     </div>
-                                                                   
-                                                                  
+
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -382,7 +382,7 @@
                                                                         <a href="#">Payment Gateway Integration</a>
                                                                     </div>
                                                                 </div>
-                                                                   
+
                                                                 <div class="item">
                                                                         <div class="menu-box">
                                                                             <div class="img-box">
@@ -405,7 +405,7 @@
                                                                             <a href="#">Financial API Integration</a>
                                                                         </div>
                                                                     </div>
-                                                                   
+
                                                                     <div class="item">
                                                                         <div class="menu-box">
                                                                             <div class="img-box">
@@ -423,7 +423,7 @@
                                                         <div id="6" class="submenu-container">
                                                             <div class="submenu6">
                                                                 <div class="owl-carousel">
-                                                               
+
                                                                 <div class="item">
                                                                         <div class="menu-box">
                                                                             <div class="img-box">
@@ -435,7 +435,7 @@
                                                                             <a href="#">Ticketing Tool</a>
                                                                         </div>
                                                                     </div>
-                                                                  
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -575,13 +575,11 @@
                                                                                 <img src="<?php echo WEB_DIR?>images/services/ERPNext-Developers.jpg" alt="" class="object-cover">
                                                                             </div>
                                                                             <h5>ERB Next Developer</h5>
-                                                                            <p>
-We provide outsourcing services for experienced ERPNext developers to support your business requirements. Our developers are proficient in customizing, deploying, and maintaining ERPNext solutions, tailored to streamline your workflows and enhance productivity.                                                                             </p>
+                                                                            <p>We provide outsourcing services for experienced ERPNext developers to support your business requirements. Our developers are proficient in customizing, deploying, and maintaining ERPNext solutions, tailored to streamline your workflows and enhance productivity.                                                                             </p>
                                                                             <a href="#">About us</a>
                                                                         </div>
                                                                     </div>
-                                                                   
-                                                                   
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -621,7 +619,7 @@ We provide outsourcing services for experienced ERPNext developers to support yo
                                                                             <a href="#">About us</a>
                                                                         </div>
                                                                     </div>
-                                                                   
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -632,7 +630,7 @@ We provide outsourcing services for experienced ERPNext developers to support yo
                                     </div>
                                 </div>
                             </li>
-                          
+
                             <li>
                                 <a href="#">Blogs</a>
                             </li>

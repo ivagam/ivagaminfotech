@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                 </div>
             </div>
         </section>
@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
                         <div class="process-box">
-                            
+
                             <h4 class="mb-3 text-uppercase">Final Solution</h4>
                             <p>After thorough planning and execution, we present the final solution tailored to your specifications. Our rigorous testing and quality assurance processes ensure a product that meets the highest standards of performance, functionality, and user experience. We deliver your solution on time, ready to make an impact on your business operations.</p>
                             <div class="icon">
@@ -172,7 +172,7 @@
                             </li>
                             <li><b>Dedicated Team:</b> Our team of passionate developers, designers, and strategists work collaboratively to deliver exceptional results. We foster a supportive and innovative work culture that reflects in the quality of our solutions.
                             </li>
-                            
+
                         </ul>
                         <p>Choose Ivagam Infotech Private Limited for a trusted partner who will guide you through the digital transformation journey, providing solutions that are not only functional but drive business success.</p>
                     </div>
@@ -183,7 +183,7 @@
             </div>
         </section>
 
-        
+
         <!--  -->
         <section class="our-team-section section-padding bgtc glowtc">
             <div class="container">
@@ -222,6 +222,15 @@
                             <div class="item">
                                 <div class="team-box">
                                     <div class="img-box">
+                                    <img src="<?php echo WEB_DIR ?>images/teams/ivagam-infotech-pradeep.png" alt="" class="object-cover">
+                                    </div>
+                                    <h4><a href="#">Pradeep P</a></h4>
+                                    <p>UIUX Designers</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team-box">
+                                    <div class="img-box">
                                     <img src="<?php echo WEB_DIR ?>images/teams/ivagam-infotech-gowtham.jpeg" alt="" class="object-cover">
                                     </div>
                                     <h4><a href="#">Gowtham R</a></h4>
@@ -246,7 +255,7 @@
                                     <p>PHP Developer</p>
                                 </div>
                             </div>
-                            
+
                             <div class="item">
                                 <div class="team-box">
                                     <div class="img-box">
@@ -286,7 +295,7 @@
                                     <p>PHP Developer</p>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -323,7 +332,7 @@
                                     </div>
                                 </div>
                             <?php endforeach; ?>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -338,6 +347,6 @@
 <script src="<?php echo WEB_DIR ?>js/owl.carousel.min.js"></script>
 <script src="<?php echo WEB_DIR ?>js/custom.js"></script>
 
-     
+
 </body>
 </html>

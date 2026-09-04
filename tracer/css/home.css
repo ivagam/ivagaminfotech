@@ -76,7 +76,7 @@
     padding: 1rem;
     text-align: center;
     height: 100%;
-    
+
     h5{
         color:var(--light);
     }
@@ -116,7 +116,7 @@
        border:2px solid var(--secondary);
        display: inline-flex;
        align-items: center;
-       justify-content: center; 
+       justify-content: center;
        border-radius: 6px;
        margin-bottom: 1.5rem;
        transition: ease-in-out all 0.3s;
@@ -157,7 +157,7 @@
        background-color: var(--secondary);
        display: inline-flex;
        align-items: center;
-       justify-content: center; 
+       justify-content: center;
        border-radius: 6px;
        margin-bottom: 1.5rem;
        /* transition: ease-in-out all 0.3s; */
@@ -252,7 +252,7 @@
 }
 
 .wcti-section{
-   background-color: var(--backgroundPrimary); 
+   background-color: var(--backgroundPrimary);
 }
 
 .wctibox{
@@ -359,7 +359,7 @@
         &:hover{
             background-color: var(--secondary);
              i{
-            
+
             color:var(--white);
         }
         }
@@ -415,7 +415,7 @@
         font-size: 2rem;
         font-family: "Patua One";
         display: inline-flex;
-        
+
 
         .counter-value{
 
@@ -433,7 +433,7 @@
     border-radius: 12px;
     overflow: hidden;
     @media(min-width:992px){
-       height: 100%; 
+       height: 100%;
     }
     iframe{
         position: absolute;
@@ -467,7 +467,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     }
 
-    
+
     .icon-wrapper {
       width:60px;
       height:60px;
@@ -484,7 +484,7 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background-color: var(--secondary); 
+      background-color: var(--secondary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -494,7 +494,7 @@
       }
     }
 
-    
+
     .card-info {
       display: flex;
       flex-direction: column;
@@ -531,8 +531,8 @@
         margin-bottom: 0;
     }
     li{
-        
-        
+
+
         color:var(--light);
         display: flex;
         column-gap: 0.5rem;
@@ -629,7 +629,7 @@
             font-size: 20px;
         }
 
-       
+
 
 
 
